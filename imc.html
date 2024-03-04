@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do IMC</title>
+</head>
+<body>
+    <form id="formIMC">
+        <label for="massa">Massa (Kg): </label>
+        <input type="number" id="massa" step="0.001"> <br><br>
+        <label for="altura">Altura (m): </label>
+        <input type="number" id="altura" step="0.01"> <br><br>
+        <input type="button" onclick="imc()" value="Calcular">
+    </form>
+    <div id="resultado"></div>
+    <script src="imc.js"></script>
+</body>
+</html>
