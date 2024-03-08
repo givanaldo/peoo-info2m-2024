@@ -3,6 +3,21 @@ for (let i = 0; i < 5; i++) {
     console.log("Número: " + i);
 }
 
+console.log('\nTabela-verdade AND');
+for (let a=0; a<=1; a++) {
+    for (let b=0; b<=1; b++) {
+        console.log(`${a}  ${b} | ${a && b}`);
+    }
+}
+
+console.log('\nTabela-verdade OR');
+for (let a=0; a<=1; a++) {
+    for (let b=0; b<=1; b++) {
+        console.log(`${a}  ${b} | ${a || b}`);
+    }
+}
+
+
 /* while */
 let num = 0;
 while (num < 5) {

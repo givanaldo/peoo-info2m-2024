@@ -23,16 +23,6 @@ console.log(5 === 5);
 console.log(5 == '5');
 console.log(5 === '5');
 
-console.log('\nTabela-verdade AND');
-for (let a=0; a<=1; a++) {
-    for (let b=0; b<=1; b++) {
-        console.log(`${a}  ${b} | ${a && b}`);
-    }
-}
-
-console.log('\nTabela-verdade OR');
-for (let a=0; a<=1; a++) {
-    for (let b=0; b<=1; b++) {
-        console.log(`${a}  ${b} | ${a || b}`);
-    }
-}
+console.log(true && false);
+console.log(1 && 1);
+console.log(1 || 0);
