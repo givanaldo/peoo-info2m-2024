@@ -5,5 +5,13 @@ function fatorial(n) {
     return fat;
 }
 
-console.log(fatorial(5));
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+readline.question(`Digite o número: `, num => {
+    console.log(`Fatorial(${num}) = ${fatorial(num)}`)
+    readline.close()
+ })
 
