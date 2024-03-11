@@ -1,13 +1,12 @@
-/* for 
-for (let i = 0; i < 5; i++) {
+/* for */
+for (let i = 1; i <= 5; i++) {
     console.log(`Número: ${i}`);
 }
 
 let soma = 0;
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 10; i++)
     soma = soma + i;
-    console.log(`Soma = ${soma}`);
-}
+console.log(`Soma = ${soma}`);
 
 console.log('\nTabela-verdade AND');
 for (let a=0; a<=1; a++) {
@@ -22,7 +21,6 @@ for (let a=0; a<=1; a++) {
         console.log(`${a}  ${b} | ${a || b}`);
     }
 }
-*/
 
 /* while */
 let num = 0;
