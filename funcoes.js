@@ -2,7 +2,6 @@
 function soma(a, b) {
     return a + b;
 }
-
 // Função anônima
 let produto = function(a, b) {
     return a * b;
@@ -11,14 +10,12 @@ let produto = function(a, b) {
 console.log(soma(5, 4));
 console.log(produto(4, 3));
 
-
 // passagem de parâmetros
 function saudacao(nome) {
     console.log("Olá, " + nome + "!");
 }
 
 saudacao("João");
-
 
 // retorno de valores
 function quadrado(x) {
@@ -37,9 +34,8 @@ function teste() {
     console.log(local); // Acesso à variável local
     console.log(global); // Acesso à variável global
 }
-
 teste();
-// console.log(local); // Erro: local is not defined
+//console.log(local); // Erro: local is not defined
 
 
 /* Exercícios
