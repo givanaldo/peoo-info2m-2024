@@ -1,3 +1,8 @@
-let idade = 20;
+let idade = '18';
 
-console.log((idade >= 18) ? "Maior" : "Pirralho(a)");
+if (typeof(idade) == "number") {
+    if (idade >= 18) console.log("Maior");
+    else console.log("Pirralho(a)");
+}
+else 
+    console.log("Digite um número!");
