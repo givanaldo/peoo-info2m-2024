@@ -9,5 +9,5 @@ function contar() {
         if (texto[i] === letra)
             contador++;
 
-    document.getElementById('resultado').innerText = `A letra ${letra} aparece ${contador} vezes no texto.`;
+    document.getElementById('resultado').innerHTML = `A letra <b>${letra}</b> aparece <b>${contador} vezes</b> no texto.`;
 }
