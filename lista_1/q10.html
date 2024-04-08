@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,11 @@
 <body>
     <h2>Ordenando um vetor numérico</h2>
     <label>Vetor separador por espaço: </label>
-    <input type="text" id="vetor" value="3 5 9 12 4 10"><br><br>
+    <input type="text" id="vetor" value="3 5 9 12 4 10 1 15"><br><br>
     <input type="radio" name="ordem" value="crescente" checked>Crescente
-    <input type="radio" name="ordem" value="decrescente">Decrescente
+    <input type="radio" name="ordem" value="decrescente">Decrescente <br><br>
+    <button onclick="ordenar()">Ordenar</button>
+    <p id="resultado"></p>
+    <script src="q10.js"></script>
 </body>
 </html>
