@@ -4,7 +4,7 @@ function cadastrar() {
     const senha1 = document.getElementById("senha1").value;    
     const senha2 = document.getElementById("senha2").value;
     
-    const regex = /^(?=.*[a-zA-Z\d]).{8,}$/;
+    //const regex = /^(?=.*[a-zA-Z\d]).{8,}$/;
     let resultado = document.getElementById("resultado");
 
     if (!nome)
@@ -17,9 +17,17 @@ function cadastrar() {
         resultado.innerHTML = '<b>Senhas divergentes!</b>';
     else if (!email.includes('@') || !email.includes('.'))
         resultado.innerHTML = '<b>E-mail inválido!</b>';
-    else if (!regex.test(senha1))
+    //else if (!regex.test(senha1))
+    else if (!validarSenha(senha1))
         resultado.innerHTML = '<b>Senha não segue as regras!</b>';
     else {
         resultado.innerHTML = '<b>Cadastro realizado com sucesso!</b>';
     }
+}
+
+function validarSenha(senha) {
+    var temLetras = /[a-zA-Z]/.test(senha); // uso de expressão regular
+    var temNumeros = /\d/.test(senha);
+    var tamanhoValido = senha.length >= 8;
+    return temLetras && temNumeros && tamanhoValido;
 }
