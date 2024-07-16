@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela</title>
+</head>
+<body>
+    <h2>Novo Produto</h2>
+    <form id="formProduto">
+        Nome: <input type="text" id="nome"><br><br>
+        Preço: <input type="text" id="preco"><br><br>
+        Categoria: 
+        <select id="categoria">
+            <option value="Alimentação">Alimentação</option>
+            <option value="Eletrônico">Eletrônico</option>
+            <option value="Eletrodoméstico">Eletrodoméstico</option>
+            <option value="Vestuário">Vestuário</option>
+        </select><br><br>
+        <input type="button" onclick="cadastrar()" value="Cadastrar produto">
+    </form>
+    <h2>Produtos Cadastrados</h2>
+    <table id="tabela" border="1">
+        <tr><th>Nome</th><th>Preço</th><th>Categoria</th></tr>
+    </table>
+    <script src="tabela.js"></script>
+</body>
+</html>
