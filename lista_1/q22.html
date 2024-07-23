@@ -5,27 +5,38 @@
 <title>Jogo da Velha</title>
 <style>
     table { 
-        border-collapse: collapse; 
-        width: 300px; 
-        height: 300px; }
+        border-collapse: collapse; margin:auto; 
+        width: 300px; height: 300px; 
+    }
     td { 
         border: 1px solid black; 
-        text-align: center; vertical-align: middle;
-        font-size: 24px; cursor: pointer; 
-        width: 100px; height: 100px;
+        text-align: center; vertical-align: middle; font-size: 24px; 
+        cursor: pointer; width: 100px; height: 100px; 
     }
 </style>
 </head>
 <body>
 
-<h2>Jogo da Velha</h2>
+<h2 style="text-align: center;">Jogo da Velha</h2>
 <table>
-    <tr> <td onclick="marcar(this, 0, 0)"></td> <td onclick="marcar(this, 0, 1)"></td> <td onclick="marcar(this, 0, 2)"></td> </tr>
-    <tr> <td onclick="marcar(this, 1, 0)"></td> <td onclick="marcar(this, 1, 1)"></td> <td onclick="marcar(this, 1, 2)"></td> </tr>
-    <tr> <td onclick="marcar(this, 2, 0)"></td> <td onclick="marcar(this, 2, 1)"></td> <td onclick="marcar(this, 2, 2)"></td> </tr>
+    <tr> 
+        <td onclick="marcar(this, 0, 0)"></td> 
+        <td onclick="marcar(this, 0, 1)"></td> 
+        <td onclick="marcar(this, 0, 2)"></td> 
+    </tr>
+    <tr> 
+        <td onclick="marcar(this, 1, 0)"></td> 
+        <td onclick="marcar(this, 1, 1)"></td>
+        <td onclick="marcar(this, 1, 2)"></td> 
+    </tr>
+    <tr> 
+        <td onclick="marcar(this, 2, 0)"></td> 
+        <td onclick="marcar(this, 2, 1)"></td>
+        <td onclick="marcar(this, 2, 2)"></td> 
+    </tr>
 </table>
 
-<p id="resultado"></p>
+<p style="text-align: center;" id="resultado"></p>
 
 <script src="q22.js"></script>
 
