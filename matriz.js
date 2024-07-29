@@ -1,23 +1,24 @@
-const A = [[ 0,  5, 13], 
-           [ 1,  2,  2], 
-           [ 4,  1,  5]];
+const A = [[0, 5, 13], 
+           [1, 2, 2]];  
 
-const B = [[ 2,  2, 32], 
-           [ 9, 12, 12], 
-           [14, 19, 23]];
+const B = [[2, 2, 32], 
+           [9, 12, 12]];
 
-const C = somaMatrizes(A, B);
 console.table(A);
 console.table(B);
+
+const C = soma(A, B);
 console.table(C);
 
-function somaMatrizes(mA, mB) {
-    let soma = [];
-    for (let i = 0; i < mA.length; i++) {
-            soma[i] = [];
-            for (let j = 0; j < mA[i].length; j++) {
-                    soma[i][j] = mA[i][j] + mB[i][j];
-            }
-    }
-    return soma;
+function soma(X, Y) {
+        let Z = [];
+        let linhas = X.length;
+        let colunas = X[0].length;
+        for (let lin = 0; lin < linhas; lin++) {
+                Z[lin] = [];
+                for (let col = 0; col < colunas; col++) {
+                        Z[lin][col] = X[lin][col] + Y[lin][col]; 
+                }
+        }
+        return Z;
 }
