@@ -19,3 +19,10 @@ const frutas = ["tamarindo", "cajá", "tomate"]
 resultado = frutas.filter(function(fruta){
     return fruta.length >= 6});
 console.log(resultado.toString());
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const somaQuadradosPares = numeros
+    .filter(num => num % 2 === 0)
+    .map(num => num ** 2)
+    .reduce((soma, valor) => soma + valor, 0);
+console.log(somaQuadradosPares); // 220
