@@ -16,7 +16,7 @@ function displayUsers(users) {
         userElement.innerHTML = `
                 <h2>${user.name}</h2>
                 <p>Email: ${user.email}</p>
-                <p>Website: ${user.website}</p>
+                <p>Company: ${user.company.name}</p>
             `;
         userList.appendChild(userElement);
     });
