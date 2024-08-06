@@ -1,17 +1,16 @@
-// URL de uma API pública de exemplo
-const apiUrl = 'https://jsonplaceholder.typicode.com/users';
+let pessoa = {
+	nome: "João",
+	idade: 30,
+	profissao: "Desenvolvedor"
+};
 
-// Fazendo uma requisição para a API
-fetch(apiUrl)
-	.then(response => response.json()) // Converte a resposta em JSON
-	.then(data => {
-		// Iterando sobre os dados recebidos
-		data.forEach(user => {
-			console.log('Nome:', user.name);
-			console.log('Email:', user.email);
-			console.log('---');
-		});
-	})
-	.catch(error => {
-		console.error('Erro ao obter dados:', error);
-});
+// let jsonString = JSON.stringify(pessoa, null, 2);
+let jsonString = JSON.stringify(pessoa);
+console.log(jsonString);
+
+
+jsonString = '{"nome":"João","idade":30,"profissao":"Desenvolvedor"}';
+pessoa = JSON.parse(jsonString);
+console.log(pessoa.nome);
+console.log(pessoa.idade);
+console.log(pessoa.profissao);
