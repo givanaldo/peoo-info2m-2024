@@ -13,4 +13,5 @@ localStorage.setItem('usuario', usuarioJSON);
 
 // Recuperando e convertendo de volta para um objeto
 const usuarioRecuperado = JSON.parse(localStorage.getItem('usuario'));
-console.log(usuarioRecuperado.nome);
+console.log("Nome: ", usuarioRecuperado.nome);
+console.log("Tema: ", usuarioRecuperado.preferencias.tema);

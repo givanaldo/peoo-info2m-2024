@@ -15,3 +15,8 @@ console.log(pessoa.saudacao());
 pessoa.idade = 32;
 pessoa.profissao = "Cozinheiro";
 console.log(pessoa.saudacao());
+console.log("\n\n");
+console.log(pessoa);
+console.log('gerando String JSON');
+const strJson = JSON.stringify(pessoa);
+console.log(strJson);
