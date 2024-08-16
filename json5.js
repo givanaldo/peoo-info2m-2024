@@ -14,8 +14,9 @@ function displayUsers(users) {
         const userElement = document.createElement('div');
         //userElement.classList.add('user');
         userElement.innerHTML = `
-                <h2>${user.name}</h2>
+                <h2>#${user.id} ${user.name}</h2>
                 <p>Email: ${user.email}</p>
+                <p>Phone: ${user.phone}</p>
                 <p>Company: ${user.company.name}</p>
             `;
         userList.appendChild(userElement);
