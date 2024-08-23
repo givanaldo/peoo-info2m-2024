@@ -4,7 +4,7 @@ function repetir() {
 
     document.getElementById("resultado").innerHTML = "";
     for (let i=0; i<n; i++) {
-        document.getElementById("resultado").innerHTML = 
+        document.getElementById("resultado").innerHTML += 
             `${frase} <br>`;
     }
 }
