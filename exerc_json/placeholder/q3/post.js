@@ -14,5 +14,4 @@ const options = {
 
 fetch(url, options)
   .then(response => response.json())
-  .then(data => console.log('Novo post criado:', data))
-  .catch(error => console.error('Erro:', error));
+  .then(data => console.log('Novo post criado:', data));
