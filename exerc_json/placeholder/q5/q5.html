@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Lista de Atividades</h1>
-
-    Usuário: <input type="number" id="user_id"> (1 a 10) 
-    <button onclick="listar()">Listar</button>
-
+    <h2>Usuários: 
+        <select id="user_id" onchange="listar()">
+            <option value="">Selecione um usuário...</option>
+        </select></h2>
     <ol id="atividades"></ol>
     <script src="q5.js"></script>
 </body>
