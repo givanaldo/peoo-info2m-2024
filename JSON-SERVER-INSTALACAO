@@ -2,4 +2,4 @@
 npm i json-server -D
 
 #executar o json-server
-npx json-server --watch server.json
+npx json-server --watch arquivo.json

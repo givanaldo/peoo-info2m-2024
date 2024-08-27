@@ -24,5 +24,20 @@
       "name": "Amanda Beatriz",
       "email": "abeatriz@hotmail.com"
     }
+  ],
+  "notas" : [
+    {
+      "userId" : 1,
+      "nota1" : 80
+    },
+    {
+      "userId" : 1,
+      "nota2" : 80
+    },
+    {
+      "userId" : 2,
+      "nota1" : 60
+    }
+
   ]
 }
