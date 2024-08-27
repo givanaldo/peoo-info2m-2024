@@ -15,8 +15,6 @@ function show_comments() {
   let post_id = document.getElementById('posts').value;
   let url_comments = `https://jsonplaceholder.typicode.com/comments?postId=${post_id}`;
   
-  console.log(post_id);
-
   fetch(url_comments)
     .then(response => response.json())
     .then(comments => {
