@@ -1,0 +1,28 @@
+{ "alunos" : [
+    {
+      "id": 1,
+      "name": "Fulano Dital",
+      "email": "fulano@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Alex Silva",
+      "email": "alexs@hotmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Clementino Saraiva",
+      "email": "saraiva@uol.com.br"
+    },
+    {
+      "id": 4,
+      "name": "Patricia Azevedo",
+      "email": "patyazevedo@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Amanda Beatriz",
+      "email": "abeatriz@hotmail.com"
+    }
+  ]
+}

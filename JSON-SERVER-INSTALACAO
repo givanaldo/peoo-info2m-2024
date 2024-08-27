@@ -1,0 +1,5 @@
+# instalar o json-server
+npm i json-server -D
+
+#executar o json-server
+npx json-server --watch server.json
