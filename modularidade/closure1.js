@@ -7,8 +7,8 @@ function contador() {
 }
 
 const minhaContagem = contador();
-console.log(minhaContagem()); // Saída: 1
-console.log(minhaContagem()); // Saída: 2
+console.log(minhaContagem()); 
+console.log(minhaContagem()); 
 console.log(minhaContagem());
 console.log(minhaContagem()); 
 console.log(minhaContagem()); 
