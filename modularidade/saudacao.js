@@ -5,3 +5,7 @@ export function saudacao(nome) {
 export function bomdia(nome) {
     return `Bom dia ${nome}!`;
 }
+
+export function soma(a, b) {
+    return a + b;
+}
