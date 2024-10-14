@@ -21,6 +21,6 @@ function exibir_fuso() {
         .then(response => response.json())
         .then(fuso => {
             const datetime = fuso.datetime;
-            resultado.innerHTML = `<b>${timezone}</b>: ${datetime}<br>`;
+            resultado.innerHTML += `<br><b>${timezone}</b>: ${datetime}<br>`;
         });
 }
