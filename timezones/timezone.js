@@ -21,6 +21,11 @@ function exibir_fuso() {
         .then(response => response.json())
         .then(fuso => {
             const datetime = fuso.datetime;
-            resultado.innerHTML += `<br><b>${timezone}</b>: ${datetime}<br>`;
+            let [data, hora] = datetime.split('T');
+            const [ano, mes, dia] = data.split('-');
+            data = `${dia}/${mes}/${ano}`;
+            hora = hora.split('.')[0];
+            resultado.innerHTML += 
+               `<br><b>${timezone}</b>: ${data} ${hora} (${datetime})<br>`;
         });
 }
