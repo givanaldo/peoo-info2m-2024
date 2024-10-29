@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Feriados Nacionais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulta de Feriados Nacionais</h1>
+
+    <label for="ano">Digite o ano:</label>
+    <input type="number" id="ano" placeholder="Ex: 2024" min="1900" max="2100">
+    <button onclick="exibir_feriados()">Buscar Feriados</button>
+
+    <div id="resultado" class="result"></div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
