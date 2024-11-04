@@ -1,3 +1,4 @@
-var hello = "Olá turma!";
-hello = 30;
+var hello = "Olá turma";
+console.log(hello);
+hello = hello + ' de Info 2M';
 console.log(hello);
