@@ -1,16 +1,24 @@
-/* Crie uma classe Livro com os atributos titulo, 
-autor e preco. Crie um método descricao que retorne 
-uma string com o título, autor e preço do livro.
+/* Adicione métodos getters e setters para as propriedades, de modo que 
+o usuário possa ler e modificar os valores (altere os atributos para privados).
+Crie uma instância da classe e teste os métodos, verificando se os valores 
+podem ser acessados e atualizados corretamente.
 */
 class Livro {
-    titulo : string;
-    autor : string;
-    preco : number;
+    private titulo : string;
+    private autor : string;
+    private preco : number;
 
     constructor(titulo : string, autor : string, preco : number) {
         this.titulo = titulo;
         this.autor = autor;
         this.preco = preco;
+    }
+
+    alterarPreco(novo_preco : number) : void {
+        if (novo_preco >= 0)
+            this.preco = novo_preco;
+        else 
+            console.log("Não permitido valor negativo!");
     }
 
     descricao() : string {
@@ -27,6 +35,5 @@ livros.forEach(livro => {
     console.log("------------");
 });
 
-// Ação não desejada
-livro2.preco = -1.99;
+livro2.alterarPreco(-1.99);
 console.log(livro2.descricao());
