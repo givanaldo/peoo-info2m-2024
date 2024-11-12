@@ -15,8 +15,11 @@ class Animal {
 }
 
 class Cachorro extends Animal {
-    constructor(nome : string) {
+    private raça : string;
+
+    constructor(nome : string, raça : string) {
         super(nome);
+        this.raça = raça;
     }
     emitirSom(): void {
         console.log("au au au au");
@@ -26,11 +29,27 @@ class Cachorro extends Animal {
     }
 }
 
+class Gato extends Animal {
+    constructor(nome : string) {
+        super(nome);
+    }
+    emitirSom(): void {
+        console.log("miau miau");
+    }
+}
+/*
 let animal = new Animal("Ornitorrinco");
 animal.emitirSom();
 animal.mover(10);
 
-let caramelo = new Cachorro("Caramelo");
+let caramelo = new Cachorro("Caramelo", "Vira-lata");
 caramelo.emitirSom();
 caramelo.mover(10);
 caramelo.pegar();
+*/
+let animais : Animal[] = [new Animal("Onça"), 
+                          new Cachorro("Mel", "Pinscher"), 
+                          new Gato("Bichano")];
+animais.forEach(animal => {
+    animal.emitirSom();
+});

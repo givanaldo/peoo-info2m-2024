@@ -27,8 +27,10 @@ var Animal = /** @class */ (function () {
 }());
 var Cachorro = /** @class */ (function (_super) {
     __extends(Cachorro, _super);
-    function Cachorro(nome) {
-        return _super.call(this, nome) || this;
+    function Cachorro(nome, raça) {
+        var _this = _super.call(this, nome) || this;
+        _this.raça = raça;
+        return _this;
     }
     Cachorro.prototype.emitirSom = function () {
         console.log("au au au au");
@@ -38,10 +40,29 @@ var Cachorro = /** @class */ (function (_super) {
     };
     return Cachorro;
 }(Animal));
-var animal = new Animal("Ornitorrinco");
+var Gato = /** @class */ (function (_super) {
+    __extends(Gato, _super);
+    function Gato(nome) {
+        return _super.call(this, nome) || this;
+    }
+    Gato.prototype.emitirSom = function () {
+        console.log("miau miau");
+    };
+    return Gato;
+}(Animal));
+/*
+let animal = new Animal("Ornitorrinco");
 animal.emitirSom();
 animal.mover(10);
-var caramelo = new Cachorro("Caramelo");
+
+let caramelo = new Cachorro("Caramelo", "Vira-lata");
 caramelo.emitirSom();
 caramelo.mover(10);
 caramelo.pegar();
+*/
+var animais = [new Animal("Onça"),
+    new Cachorro("Mel", "Pinscher"),
+    new Gato("Bichano")];
+animais.forEach(function (animal) {
+    animal.emitirSom();
+});
