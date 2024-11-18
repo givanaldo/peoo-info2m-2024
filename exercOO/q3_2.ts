@@ -23,9 +23,24 @@ class Livro {
 class Biblioteca {
     private livros: Livro[] = [];
 
+    constructor(livros? : Livro[]) {
+        if (livros) {
+            livros.forEach(livro => {
+                this.livros.push(livro);
+            });     
+        }   
+    }
+
     adicionarLivro(livro: Livro) : void {
         this.livros.push(livro);
         console.log("Livro adicionado.");
+    }
+
+    adicionarLivros(vetor: Livro[]) : void {
+        vetor.forEach(livro => {
+            this.livros.push(livro);
+        });        
+        console.log("Livros adicionado.");
     }
 
     listarLivros() : void {
@@ -42,7 +57,6 @@ let livro3 = new Livro("Admirável mundo novo", "Huxley", 34.70);
 let livro4 = new Livro("O Pequeno Príncipe", "Saint-Exupery", 30);
 
 let vetor : Livro[] = [livro1, livro2, livro3, livro4];
-let biblio = new Biblioteca();
-vetor.forEach(livro => { biblio.adicionarLivro(livro); });
+let biblio = new Biblioteca(vetor);
 biblio.listarLivros();
 
