@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Livro_1 = require("./Livro");
+var Biblioteca_1 = require("./Biblioteca");
+var LivroDigital_1 = require("./LivroDigital");
+var livro1 = new Livro_1.Livro("1984", "George Orwell", 16.09);
+var livro2 = new Livro_1.Livro("O Senhor dos Anéis (box)", "Tolkien", 129.90);
+var livro3 = new Livro_1.Livro("Admirável mundo novo", "Huxley", 34.70);
+var livro4 = new Livro_1.Livro("O Pequeno Príncipe", "Saint-Exupery", 30);
+var vetor = [livro1, livro2, livro3, livro4];
+var biblio = new Biblioteca_1.Biblioteca(vetor);
+biblio.listarLivros();
+var livroDigital = new LivroDigital_1.LivroDigital("1984", "George Orwell", 9.90, "PDF");
+biblio.adicionarLivro(livroDigital);
+biblio.listarLivros();
