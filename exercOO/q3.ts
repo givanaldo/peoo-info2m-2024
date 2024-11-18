@@ -21,7 +21,7 @@ class Livro {
 }
 
 class Biblioteca {
-    private livros: Livro[];
+    private livros: Livro[] = [];
 
     adicionarLivro(livro: Livro) : void {
         this.livros.push(livro);
@@ -44,3 +44,6 @@ let biblio = new Biblioteca();
 biblio.adicionarLivro(livro1);
 biblio.adicionarLivro(livro2);
 biblio.adicionarLivro(livro3);
+biblio.listarLivros();
+biblio.adicionarLivro(new Livro("O Pequeno Príncipe", "Saint-Exupery", 30));
+biblio.listarLivros();
