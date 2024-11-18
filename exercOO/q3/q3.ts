@@ -20,6 +20,27 @@ class Livro {
         return `Livro: ${this.titulo}\nAutor: ${this.autor}\nPreço: R$ ${this.preco.toFixed(2)}`;    }
 }
 
+class Biblioteca {
+    private livros: Livro[];
+
+    adicionarLivro(livro: Livro) : void {
+        this.livros.push(livro);
+        console.log("Livro adicionado.");
+    }
+
+    listarLivros() : void {
+        console.log("LISTAGEM DOS LIVROS:");
+        this.livros.forEach(livro => {
+            console.log("- " + livro.descricao());
+        });
+    }
+}
+
 let livro1 = new Livro("1984", "George Orwell", 16.09);
 let livro2 = new Livro("O Senhor dos Anéis (box)", "Tolkien", 129.90);
 let livro3 = new Livro("Admirável mundo novo", "Huxley", 34.70);
+
+let biblio = new Biblioteca();
+biblio.adicionarLivro(livro1);
+biblio.adicionarLivro(livro2);
+biblio.adicionarLivro(livro3);
