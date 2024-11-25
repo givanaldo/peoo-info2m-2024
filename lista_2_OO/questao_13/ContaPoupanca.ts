@@ -18,7 +18,7 @@ export class ContaPoupanca extends Conta {
 
   depositar(valor: number): void {
     if (valor > 0) {
-      const valorComRendimento = valor + valor * this._taxaRendimento;
+      const valorComRendimento = valor + (valor * this._taxaRendimento);
       this._saldo += valorComRendimento;
       console.log(`Depósito de R$ ${valor.toFixed(2)} realizado com sucesso com rendimento aplicado. Saldo atual: R$ ${this._saldo.toFixed(2)}`);
     } else {
