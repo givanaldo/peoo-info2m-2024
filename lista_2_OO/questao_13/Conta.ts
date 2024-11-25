@@ -1,17 +1,9 @@
 export class Conta {
-    private _saldo: number;
+    protected _saldo: number;
   
     constructor(saldoInicial: number = 0) {
       this._saldo = saldoInicial;
-    }
-  
-    get saldo(): number {
-      return this._saldo;
-    }
-  
-    set saldo(saldo: number) {
-      this._saldo = saldo;
-    }
+    }  
   
     depositar(valor: number): void {
       if (valor > 0) {
