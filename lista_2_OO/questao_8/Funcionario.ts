@@ -8,8 +8,6 @@ export class Funcionario {
     }
   
     get nome(): string { return this._nome; }
-  
     set nome(nome: string) { this._nome = nome; }
-  
     get salario(): number { return this._salario; }
   }

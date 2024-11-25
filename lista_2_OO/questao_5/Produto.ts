@@ -8,8 +8,8 @@ export class Produto {
     }
 
     get nome() : string { return this._nome; }
-    get preco() : number { return this._preco; }
     set nome(novo_nome : string) { this._nome = novo_nome; }
+    get preco() : number { return this._preco; }
     set preco(novo_preco : number) { this._preco = novo_preco; }
 
     descricao() : string { return `${this.nome} (R$ ${this.preco.toFixed(2)})`; }
