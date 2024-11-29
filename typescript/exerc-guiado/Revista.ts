@@ -1,13 +1,13 @@
 import { ItemBiblioteca } from './ItemBiblioteca';
 
 export class Revista extends ItemBiblioteca {
-  constructor(
-    titulo: string,
-    anoPublicacao: number,
-    private editora: string,
-    private numeroEdicao: number
-  ) {
+  private editora: string;
+  private numeroEdicao: number;
+
+  constructor(titulo: string, anoPublicacao: number, editora: string, numeroEdicao: number) {
     super(titulo, anoPublicacao);
+    this.editora = editora;
+    this.numeroEdicao = numeroEdicao;
   }
 
   exibirInformacoes(): string {

@@ -1,7 +1,13 @@
 import { ItemBiblioteca } from './ItemBiblioteca';
 
 export class Usuario {
-  constructor(private _nome: string, private _idUsuario: number) {}
+  private _nome: string;
+  private _idUsuario: number;
+
+  constructor(nome: string, idUsuario: number) {
+    this._nome = nome;
+    this._idUsuario = idUsuario;
+  }
 
   get nome(): string {
     return this._nome;
