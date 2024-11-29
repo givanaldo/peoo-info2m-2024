@@ -9,15 +9,10 @@ export class Endereco {
       this._cep = cep;
     }
   
-    get rua(): string { return this._rua; }
-  
-    set rua(rua: string) { this._rua = rua; }
-  
-    get cidade(): string { return this._cidade; }
-  
-    set cidade(cidade: string) { this._cidade = cidade; }
-  
-    get cep(): string { return this._cep; }
-  
+    get rua(): string { return this._rua; }  
+    set rua(rua: string) { this._rua = rua; }  
+    get cidade(): string { return this._cidade; }  
+    set cidade(cidade: string) { this._cidade = cidade; }  
+    get cep(): string { return this._cep; }  
     set cep(cep: string) { this._cep = cep; }
   }

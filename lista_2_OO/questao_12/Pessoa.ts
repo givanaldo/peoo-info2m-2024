@@ -10,11 +10,8 @@ export class Pessoa {
   }
 
   get nome(): string { return this._nome; }
-
   set nome(nome: string) { this._nome = nome; }
-
   get endereco(): Endereco { return this._endereco; }
-
   set endereco(endereco: Endereco) { this._endereco = endereco; }
 
   mostrarEndereco(): void {
