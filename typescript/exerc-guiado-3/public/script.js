@@ -23,5 +23,10 @@ function exibirItens() {
   }
 }
 
+function exibirItensNode() {
+  console.log(livro1.exibirInformacoes());
+  console.log(revista1.exibirInformacoes());
+}
+
 // Chama a função para exibir os itens
 exibirItens();

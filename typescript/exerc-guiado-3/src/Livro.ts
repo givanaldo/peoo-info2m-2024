@@ -1,4 +1,4 @@
-import { ItemBiblioteca } from './ItemBiblioteca';
+import { ItemBiblioteca } from './ItemBiblioteca.js';
 
 export class Livro extends ItemBiblioteca {
 

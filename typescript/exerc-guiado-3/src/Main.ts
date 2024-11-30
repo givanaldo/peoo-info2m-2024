@@ -1,7 +1,7 @@
-import { Livro } from './Livro';
-import { Revista } from './Revista';
-import { Usuario } from './Usuario';
-import { Biblioteca } from './Biblioteca';
+import { Livro } from './Livro.js';
+import { Revista } from './Revista.js';
+import { Usuario } from './Usuario.js';
+import { Biblioteca } from './Biblioteca.js';
 
 const livro1 = new Livro("O Senhor dos Anéis", 1954, "J.R.R. Tolkien", 1216);
 const revista1 = new Revista("National Geographic", 2024, "NG Media", 150);

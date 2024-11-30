@@ -1,4 +1,4 @@
-import { ItemBiblioteca } from './ItemBiblioteca';
+import { ItemBiblioteca } from './ItemBiblioteca.js';
 
 export class Revista extends ItemBiblioteca {
   private editora: string;

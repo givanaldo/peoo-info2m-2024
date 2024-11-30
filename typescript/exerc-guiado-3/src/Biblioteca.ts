@@ -1,5 +1,5 @@
-import { ItemBiblioteca } from "./ItemBiblioteca";
-import { Usuario } from './Usuario';
+import { ItemBiblioteca } from "./ItemBiblioteca.js";
+import { Usuario } from './Usuario.js';
 
 export class Biblioteca {
   private itensDisponiveis: ItemBiblioteca[] = [];
