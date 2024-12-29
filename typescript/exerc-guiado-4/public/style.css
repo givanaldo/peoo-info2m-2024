@@ -10,6 +10,11 @@ body {
   
   #biblioteca {
     margin-top: 20px;
+    border-width: 2px; /* Largura da borda */
+    border-style: dashed; /* Estilo da borda (sólida, pontilhada, tracejada, etc.) */
+    border-color: #007BFF; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno ao redor da borda */
   }
   
   
