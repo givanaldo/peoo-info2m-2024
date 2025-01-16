@@ -33,4 +33,25 @@ function exibirItens() {
   }
 }
 
+function adicionarLivro() {
+  const titulo = document.getElementById('titulo').value;
+  const ano = document.getElementById('ano').value;
+  const autor = document.getElementById('autor').value;
+  const paginas = document.getElementById('paginas').value;
+  const livro = new Livro(titulo, ano, autor, paginas);
+  biblioteca.adicionarItem(livro);
+  exibirItens();
+}
+
+function adicionarRevista() {
+  const titulo = document.getElementById('titulo').value;
+  const ano = document.getElementById('ano').value;
+  const editora = document.getElementById('editora').value;
+  const numero = document.getElementById('numero').value;
+  const revista = new Revista(titulo, ano, editora, numero);
+  
+  biblioteca.adicionarItem(revista);
+  exibirItens();
+}
+
 exibirItens();

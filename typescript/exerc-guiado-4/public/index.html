@@ -9,8 +9,28 @@
   </head>
   <body>
     <h1>Bem-vindo ao Sistema de Biblioteca</h1>
+
+    <h2>Novo Livro</h2>
+    <div id="novo">
+      Título: <input type="text" id="titulo">&nbsp;&nbsp;
+      Autor: <input type="text" id="autor"><br><br />
+      Ano: <input type="number" id="ano">&nbsp;&nbsp;
+      Páginas: <input type="number" id="paginas"><br><br />
+      <button id="adicionarLivro" onclick="adicionarLivro()">Adicionar</button>
+    </div>
+
+    <h2>Nova Revista</h2>
+    <div id="novo">
+      Título: <input type="text" id="titulo">&nbsp;&nbsp;
+      Editora: <input type="text" id="editora"><br><br />
+      Ano: <input type="number" id="ano">&nbsp;&nbsp;
+      Edição: <input type="number" id="paginas"><br><br />
+      <button id="adicionarRevista" onclick="adicionarRevista()">Adicionar</button>
+    </div>
+
     <h2>Itens Disponíveis</h2>
     <div id="biblioteca"></div>
+
     <script type="module" src="script.js"></script>
   </body>
 </html>

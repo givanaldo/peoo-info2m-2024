@@ -7,6 +7,16 @@ body {
   h1 {
     color: #333;
   }
+
+  #novo {
+    margin-top: 20px;
+    border-width: 2px; /* Largura da borda */
+    border-style: double; /* Estilo da borda (sólida, pontilhada, tracejada, etc.) */
+    border-color: #00ff88; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno ao redor da borda */  
+    width: 50%; /* Define a largura do div */
+  }
   
   #biblioteca {
     margin-top: 20px;
@@ -15,6 +25,7 @@ body {
     border-color: #007BFF; /* Cor da borda */
     border-radius: 10px; /* Bordas arredondadas */
     padding: 15px; /* Espaçamento interno ao redor da borda */
+    width: 50%; /* Define a largura do div */
   }
   
   
