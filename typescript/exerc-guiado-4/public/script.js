@@ -33,25 +33,42 @@ function exibirItens() {
   }
 }
 
-function adicionarLivro() {
-  const titulo = document.getElementById('titulo').value;
-  const ano = document.getElementById('ano').value;
+export function adicionarLivro() {
+  const titulo = document.getElementById('tituloLivro').value;
+  const ano = document.getElementById('anoLivro').value;
   const autor = document.getElementById('autor').value;
   const paginas = document.getElementById('paginas').value;
+
   const livro = new Livro(titulo, ano, autor, paginas);
   biblioteca.adicionarItem(livro);
   exibirItens();
+
+  // Limpar os campos do formulário
+  document.getElementById('tituloLivro').value = '';
+  document.getElementById('anoLivro').value = '';
+  document.getElementById('autor').value = '';
+  document.getElementById('paginas').value = '';
 }
 
-function adicionarRevista() {
-  const titulo = document.getElementById('titulo').value;
-  const ano = document.getElementById('ano').value;
+export function adicionarRevista() {
+  const titulo = document.getElementById('tituloRev').value;
+  const ano = document.getElementById('anoRev').value;
   const editora = document.getElementById('editora').value;
-  const numero = document.getElementById('numero').value;
-  const revista = new Revista(titulo, ano, editora, numero);
-  
+  const edicao = document.getElementById('edicao').value;
+
+  const revista = new Revista(titulo, ano, editora, edicao);
   biblioteca.adicionarItem(revista);
   exibirItens();
+
+  // Limpar os campos do formulário
+  document.getElementById('tituloRev').value = '';
+  document.getElementById('anoRev').value = '';
+  document.getElementById('editora').value = '';
+  document.getElementById('edicao').value = '';
 }
 
 exibirItens();
+
+// Adicionar eventos aos botões
+document.getElementById('adicionarLivro').addEventListener('click', adicionarLivro);
+document.getElementById('adicionarRevista').addEventListener('click', adicionarRevista);
