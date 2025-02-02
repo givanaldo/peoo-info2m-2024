@@ -1,0 +1,23 @@
+# Diretório com as dependências instaladas pelo npm
+node_modules/
+
+# Arquivos e pastas de build (caso utilize um diretório de saída, como "dist" ou "build")
+dist/
+build/
+
+# Arquivos de configuração e cache do TypeScript
+*.tsbuildinfo
+
+# Arquivos de log
+*.log
+
+# Arquivos de ambiente (contêm dados sensíveis, como credenciais)
+.env
+
+# Arquivos e pastas de IDEs e editores
+.vscode/
+.idea/
+
+# Arquivos do sistema operacional (Mac, Windows, etc.)
+.DS_Store
+Thumbs.db
