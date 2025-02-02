@@ -1,0 +1,17 @@
+<h1>{{#if usuario.id}}Editar Usuário{{else}}Novo Usuário{{/if}}</h1>
+<form action="{{action}}" method="post">
+  <div class="form-group">
+    <label for="nome">Nome:</label>
+    <input type="text" class="form-control" name="nome" id="nome" value="{{usuario.nome}}" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" name="email" id="email" value="{{usuario.email}}" required>
+  </div>
+  <div class="form-group">
+    <label for="telefone">Telefone:</label>
+    <input type="text" class="form-control" name="telefone" id="telefone" value="{{usuario.telefone}}">
+  </div>
+  <button type="submit" class="btn btn-success">Salvar</button>
+  <a href="/usuarios" class="btn btn-secondary">Cancelar</a>
+</form>

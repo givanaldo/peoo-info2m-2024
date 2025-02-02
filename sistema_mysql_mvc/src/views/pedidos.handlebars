@@ -1,0 +1,35 @@
+<h1>Pedidos</h1>
+<div class="mb-3">
+  <form method="get" action="/pedidos" class="form-inline">
+    <label class="mr-2" for="usuario_id">Selecione o Usuário:</label>
+    <select name="usuario_id" id="usuario_id" class="form-control mr-2">
+      <option value="">-- Selecione --</option>
+      {{#each usuarios}}
+        <option value="{{this.id}}" {{#ifCond this.id ../selectedUsuarioId}}selected{{/ifCond}}>{{this.nome}}</option>
+      {{/each}}
+    </select>
+    <button type="submit" class="btn btn-primary">Buscar Pedidos</button>
+  </form>
+</div>
+{{#if selectedUsuarioId}}
+  <h2>Pedidos do Usuário</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Data</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each pedidos}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.data}}</td>
+          <td>{{this.valor}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{/if}}
+<a href="/pedidos/create" class="btn btn-success">Novo Pedido</a>

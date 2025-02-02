@@ -1,0 +1,27 @@
+<h1>Usuários</h1>
+<a href="/usuarios/create" class="btn btn-primary mb-3">Novo Usuário</a>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each usuarios}}
+      <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.nome}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.telefone}}</td>
+        <td>
+          <a href="/usuarios/edit/{{this.id}}" class="btn btn-warning btn-sm">Editar</a>
+          <a href="/usuarios/delete/{{this.id}}" class="btn btn-danger btn-sm" onclick="return confirm('Tem certeza que deseja excluir este usuário?')">Excluir</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
