@@ -1,6 +1,12 @@
 -- Criar banco de dados sistema_pedidos no MySQL por meio do phpMyAdmin
 -- Executar o script abaixo no phpMyAdmin para criar as tabelas necessárias
 
+-- Criação do banco de dados
+CREATE DATABASE sistema_pedidos;
+
+-- Seleciona o banco de dados para uso
+USE sistema_pedidos;
+
 -- Criação da tabela de usuários
 CREATE TABLE IF NOT EXISTS usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
