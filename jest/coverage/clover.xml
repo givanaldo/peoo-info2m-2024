@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1739283483930" clover="3.2.0">
+  <project timestamp="1739283483930" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="3" coveredconditionals="3" methods="5" coveredmethods="5" elements="18" coveredelements="18" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
+    <file name="ContaBancaria.ts" path="D:\Usuarios\1551933\Documents\peoo-info2m-2024\jest\ContaBancaria.ts">
+      <metrics statements="8" coveredstatements="8" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="5" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="10" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="15" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+    </file>
+    <file name="math.ts" path="D:\Usuarios\1551933\Documents\peoo-info2m-2024\jest\math.ts">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>
